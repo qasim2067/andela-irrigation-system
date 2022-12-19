@@ -15,7 +15,7 @@
 #### 4. Create a new database irrigationsystem in your database
 #### 5. Run the Project as springboot application OR run IrrigationSystemApplication class with no arguments.
 
-## How to Access Api
+## How to Access Rest Apis
 #### There are 2 ways to access the apis for irrigation system
 #### 1. Postman
 ##### For this import the postman collection included in repos with file name AIS.postman_collection.json
