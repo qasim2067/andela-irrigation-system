@@ -14,6 +14,8 @@
 #### 3. Update the application.properties file with the dbuser and password as per your system setup.
 #### 4. Create a new database irrigationsystem in your database
 #### 5. Run the Project as springboot application OR run IrrigationSystemApplication class with no arguments.
+#### 6. if you are not using any ide use following command to run the project mvn spring-boot:run
+
 
 ## How to Access Rest Apis
 #### There are 2 ways to access the apis for irrigation system
