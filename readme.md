@@ -18,7 +18,7 @@
 ## How to Access Api
 #### There are 2 ways to access the apis for irrigation system
 #### 1. Postman
-##### For this import the postman collection shared in postman application
+##### For this import the postman collection included in repos with file name AIS.postman_collection.json
 ##### You can access the apis present in the collection to perform various operations
 #### 2. Swagger
 ##### The apis can also be tested using the swagger configured within the applicaiton code as a dependency.
