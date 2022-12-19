@@ -1,0 +1,192 @@
+{
+	"info": {
+		"_postman_id": "f5aac2fa-4545-499e-b5cf-b3838bc48811",
+		"name": "AIS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17685942"
+	},
+	"item": [
+		{
+			"name": "new sensor",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"modelNo\": \"2222\",\r\n        \"active\" : true,\r\n        \"deviceUniqueIdentifier\":\"1qqqqqd3\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/sensor",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sensor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET list sensor",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/sensor/list",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sensor",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New plot",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"latitude\": \"!2323.asds\",\r\n    \"longitude\": \"1233.222\",\r\n    \"totalSize\": \"1232\",\r\n    \"cropType\": \"wheat\",\r\n    \"cultivatedArea\": \"222\",\r\n    \"name\": \"asnce\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/plot",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"plot"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit plot",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"latitude\": \"2323.222\",\r\n    \"longitude\": \"1233.222\",\r\n    \"totalSize\": \"1232\",\r\n    \"cropType\": \"wheat\",\r\n    \"cultivatedArea\": \"222\",\r\n    \"name\": \"asnce\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/plot/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"plot",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list plot",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/plot/list",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"plot",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "new slot",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"plotId\" : \"1\",\r\n    \"startTime\" : \"10:10\",\r\n    \"endTime\" : \"12:12\",\r\n    \"date\": null,\r\n    \"recurring\" : true,\r\n    \"active\" : true,\r\n    \"sensorDeviceId\" : \"1qqqqqd3\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/slots",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"slots"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list slots",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "irrigation trigger",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "alerts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/alert/list",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"alert",
+						"list"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
